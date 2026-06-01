@@ -22,7 +22,7 @@
         <a href="#">Contato</a>
     </nav>
 
-    <button class="btn-topo">Cadastre seu time</button>
+    <button class="btn-topo"><a href="{{ route('teams.create') }}">Cadastre seu time</a></button>
 </header>
 
 <section class="hero">
@@ -49,6 +49,7 @@
             @foreach ($teams as $team) 
                 <div class="time-card">
                     {{ $team->name }}
+                    <img src="{{ asset('storage/' . $team->logo) }}" width="80">
                 </div>
             @endforeach
         </div>

@@ -7,8 +7,13 @@ use App\Http\Controllers\TeamController;
 
 Route::get('/', [TeamController::class, 'index']);
 Route::get('/create', [TeamController::class, 'teams.create']);
-Route::view('/register', 'auth.register');
-Route::view('/login', 'auth.login');
+Route::get('/edit', [TeamController::class, 'edit']);
+Route::get('/register', function () {
+    return view('auth.register');
+});
+Route::get('/login', function () {
+    return view('auth.login');
+});
 
 Auth::routes();
 

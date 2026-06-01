@@ -1,18 +1,73 @@
-@section('title', 'Dashboard')
+@extends('adminlte::page')
 
-@section('content_header')
-    <h1>Dashboard</h1>
-@stop
+@section('title', 'Cadastro')
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-@stop
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
 
-@section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
-@stop
+        <div class="card card-success">
+            <div class="card-header">
+                <h3 class="card-title"> 
+                    Cadastro de Times
+                </h3>
+            </div>
 
-@section('js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+            <div class="card-body">
+
+                <form method="POST" action="{{ route('teams.store') }}" enctype="multipart/form-data">
+                    @csrf
+
+                    <div class="form-group">
+                        <label>Nome do time</label>
+                        <input type="text"
+                               name="name"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email para contato</label>
+                        <input type="email"
+                               name="contact"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jogadores</label>
+                        <input type="text"
+                               name="players"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cidade</label>
+                        <input type="text"
+                               name="city"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Escudo</label>
+
+                        <input type="file"
+                                name="logo"
+                                class="form-control @error('logo') is-invalid @enderror">
+                            @error('logo')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
+                    </div>
+
+                    <button class="btn btn-success">
+                        Cadastrar
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
 @stop

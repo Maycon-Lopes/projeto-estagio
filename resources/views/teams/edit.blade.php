@@ -1,3 +1,74 @@
-<div>
-    <!-- People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius -->
+@extends('adminlte::page')
+
+@section('title', 'Editar Time')
+
+@section('content')
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+
+        <div class="card card-success">
+            <div class="card-header">
+                <h3 class="card-title"> 
+                    Editar Time
+                </h3>
+            </div>
+
+            <div class="card-body">
+
+                <form method="POST" action="{{ route('teams.edit', $team->id) }}" enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+
+                    <div class="form-group">
+                        <label>Nome do time</label>
+                        <input type="text"
+                               name="name"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email para contato</label>
+                        <input type="email"
+                               name="contact"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Jogadores</label>
+                        <input type="text"
+                               name="players"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cidade</label>
+                        <input type="text"
+                               name="city"
+                               class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Escudo</label>
+
+                        <input type="file"
+                                name="logo"
+                                class="form-control @error('logo') is-invalid @enderror">
+                            @error('logo')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
+                    </div>
+
+                    <button class="btn btn-success">
+                        Atualizar
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
 </div>
+@stop
