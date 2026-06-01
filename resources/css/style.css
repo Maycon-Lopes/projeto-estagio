@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background: #0b1d2a;
-    color: rgb(46, 38, 38);
+    color: #f5f5f5;
 }
 
 /* HEADER */
@@ -99,3 +99,39 @@ p {
     border-radius: 25px;
     cursor: pointer;
 }
+
+.times-box {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+}
+
+.times-box h2 {
+    margin-bottom: 20px;
+    color: #8cff00;
+    text-align: center;
+}
+
+.lista-times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.time-card {
+    background: #132b3d;
+    border: 1px solid #8cff00;
+    border-radius: 10px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    color: white;
+}
+
+.time-card img {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+

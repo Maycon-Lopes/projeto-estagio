@@ -24,8 +24,10 @@ class UpdateTeamRequest extends FormRequest
     {
         return [
             'name' => 'required|min:3|max:255',
-            'city' => 'required|max:255',
+            'city' => 'required|min:3|max:255',
             'logo' => 'required|image|mimes:jpeg,png,jpg,svg,webp|max:2048',
+            'contact' => 'required|email|max:255',
+            'players' => 'required|min:3|max:255',
         ];
     }
 
@@ -36,10 +38,17 @@ class UpdateTeamRequest extends FormRequest
         'name.min' => 'O nome do time deve ter pelo menos 3 caracteres.',
         'name.max' => 'O nome do time deve ter no máximo 255 caracteres.',
         'city.required' => 'A cidade do time é obrigatória.',
+        'city.min' => 'A cidade do time deve ter pelo menos 3 caracteres.',
         'city.max' => 'A cidade do time deve ter no máximo 255 caracteres.',
         'logo.required' => 'Você deve enviar uma imagem.',
         'logo.image' => 'O arquivo deve ser uma imagem.',
         'logo.max' => 'A imagem deve ter no máximo 2 MB.',
+        'contact.required' => 'O email para contato é obrigatório.',
+        'contact.email' => 'O email para contato deve ser um email válido.',
+        'contact.max' => 'O email para contato deve ter no máximo 255 caracteres.',
+        'players.required' => 'Os jogadores são obrigatórios.',
+        'players.min' => 'Os jogadores devem ter pelo menos 3 caracteres.',
+        'players.max' => 'Os jogadores devem ter no máximo 255 caracteres.',
     ];
 }
 }
