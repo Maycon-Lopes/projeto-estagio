@@ -2,11 +2,11 @@
 
 @section('content')
 
-@vite('resources/css/app.css')
+@vite('resources/css/style.css')
 
 <header>
 
-@vite('resources/css/app.css')
+
 
   
 
