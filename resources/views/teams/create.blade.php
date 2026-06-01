@@ -23,6 +23,11 @@
                         <input type="text"
                                name="name"
                                class="form-control">
+                               @error('name')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -30,6 +35,11 @@
                         <input type="email"
                                name="contact"
                                class="form-control">
+                               @error('contact')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -37,6 +47,11 @@
                         <input type="text"
                                name="players"
                                class="form-control">
+                               @error('players')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -44,6 +59,11 @@
                         <input type="text"
                                name="city"
                                class="form-control">
+                               @error('city')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">

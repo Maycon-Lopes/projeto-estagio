@@ -6,10 +6,6 @@
 
 <header>
 
-
-
-  
-
     <div class="logo">⚽ <span>TIME</span> CONECTADO</div>
 
     <nav>

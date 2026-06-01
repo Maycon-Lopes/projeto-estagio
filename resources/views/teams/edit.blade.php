@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Editar Time')
+@section('title', 'Cadastro')
 
 @section('content')
 <div class="row justify-content-center mt-5">
@@ -9,13 +9,13 @@
         <div class="card card-success">
             <div class="card-header">
                 <h3 class="card-title"> 
-                    Editar Time
+                    Atualizar Times
                 </h3>
             </div>
 
             <div class="card-body">
 
-                <form method="POST" action="{{ route('teams.edit', $team->id) }}" enctype="multipart/form-data">
+                <form method="POST" action="{{ route('teams.update', $team->id) }}" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
 
@@ -24,6 +24,11 @@
                         <input type="text"
                                name="name"
                                class="form-control">
+                               @error('name')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -31,6 +36,11 @@
                         <input type="email"
                                name="contact"
                                class="form-control">
+                               @error('contact')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -38,6 +48,11 @@
                         <input type="text"
                                name="players"
                                class="form-control">
+                               @error('players')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -45,6 +60,11 @@
                         <input type="text"
                                name="city"
                                class="form-control">
+                               @error('city')
+                        <span class="text-danger">
+                            {{ $message }}
+                        </span>
+                            @enderror
                     </div>
 
                     <div class="form-group">
@@ -61,7 +81,7 @@
                     </div>
 
                     <button class="btn btn-success">
-                        Atualizar
+                        Cadastrar
                     </button>
 
                 </form>
