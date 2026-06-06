@@ -10,7 +10,6 @@ class Team extends Model
         'name',
         'city',
         'logo',
-        'players',
         'contact',
     ];
 }

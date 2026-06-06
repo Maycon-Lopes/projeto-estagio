@@ -9,25 +9,44 @@ use App\Models\Team;
 
 class TeamSeeder extends Seeder {
     public function run() {
-        $teams = [
-            [
-                'name' => 'Botafogo',
-                'city' => 'Rio de Janeiro',
-                'logo' => 'botafogo.png',
-                'players' => 'Gatito Fernandez, Diego Gonçalves, Rafael Navarro',
-                'contact' => 'contato@botafogo.com.br',
-            ],
-            [
-                'name' => 'Flamengo',
-                'city' => 'Rio de Janeiro',
-                'logo' => 'flamengo.png',
-                'players' => 'Gabriel Batista, Renato Augusto, Diego Alves',
-                'contact' => 'contato@flamengo.com.br',
-            ],
-        ];
-
-        foreach ($teams as $team) {
+        $teams = [[
+            'name' => 'Botafogo',
+            'city' => 'Rio de Janeiro',
+            'logo' => 'teams/botafogo-escudo.webp',
+            'contact' => 'botafogo@gmail.com',
+        ],
+        [
+            'name' => 'Flamengo',
+            'city' => 'Rio de Janeiro',
+            'logo' => 'teams/framengo.webp',
+            'contact' => 'flamengo@gmail.com',
+        ],
+        [
+            'name' => 'Paris Saint Germain',
+            'city' => 'Paris',
+            'logo' => 'teams/PSG.webp',
+            'contact' => 'psg@gmail.com',
+        ],
+        [
+            'name' => 'Fortaleza',
+            'city' => 'Fortaleza',
+            'logo' => 'teams/Fortaleza.webp',
+            'contact' => 'fortaleza@gmail.com',
+        ],
+        [
+            'name' => 'Remo',
+            'city' => 'Remada',
+            'logo' => 'teams/Remo.webp',
+            'contact' => 'remo@gmail.com',
+        ],  
+        [
+            'name' => 'Ceará',
+            'city' => 'Fortal city',
+            'logo' => 'teams/Ceara.webp',
+            'contact' => 'ceara@gmail.com',
+        ]];
+        foreach ($teams as $team) { 
             Team::create($team);
         }
     }
-}
+}   

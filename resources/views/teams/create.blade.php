@@ -43,18 +43,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Jogadores</label>
-                        <input type="text"
-                               name="players"
-                               class="form-control">
-                               @error('players')
-                        <span class="text-danger">
-                            {{ $message }}
-                        </span>
-                            @enderror
-                    </div>
-
-                    <div class="form-group">
                         <label>Cidade</label>
                         <input type="text"
                                name="city"
