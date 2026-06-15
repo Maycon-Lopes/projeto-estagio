@@ -3,6 +3,11 @@
 @section('title', 'Cadastro')
 
 @section('content')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/admin-custom.css') }}">
+@stop
+
 <div class="row justify-content-center mt-5">
     <div class="col-md-6">
 
