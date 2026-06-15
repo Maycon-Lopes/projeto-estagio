@@ -27,7 +27,6 @@ class StoreTeamRequest extends FormRequest
             'city' => 'required|min:3|max:255',
             'logo' => 'required|image|mimes:jpeg,png,jpg,svg,webp|max:2048',
             'contact' => 'required|email|max:255',
-            'players' => 'required|min:3|max:255',
         ];
     }
 
@@ -46,9 +45,6 @@ class StoreTeamRequest extends FormRequest
         'contact.required' => 'O email para contato é obrigatório.',
         'contact.email' => 'O email para contato deve ser um email válido.',
         'contact.max' => 'O email para contato deve ter no máximo 255 caracteres.',
-        'players.required' => 'Os jogadores são obrigatórios.',
-        'players.min' => 'Os jogadores devem ter pelo menos 3 caracteres.',
-        'players.max' => 'Os jogadores devem ter no máximo 255 caracteres.',
     ];
 }
 }

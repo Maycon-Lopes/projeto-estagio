@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('city');
             $table->string('logo');
-            $table->string('players');
             $table->string('contact');
             $table->timestamps();
         });

@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Cadastro')
+@section('title', 'Editar')
 
 @section('content')
 <div class="row justify-content-center mt-5">
@@ -44,18 +44,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Jogadores</label>
-                        <input type="text"
-                               name="players"
-                               class="form-control">
-                               @error('players')
-                        <span class="text-danger">
-                            {{ $message }}
-                        </span>
-                            @enderror
-                    </div>
-
-                    <div class="form-group">
                         <label>Cidade</label>
                         <input type="text"
                                name="city"
@@ -73,6 +61,11 @@
                         <input type="file"
                                 name="logo"
                                 class="form-control @error('logo') is-invalid @enderror">
+                                @if($team->logo)
+                                    <img src="{{ asset('storage/' . $team->logo) }}"
+                                         width="100"
+                                         class="mb-3">
+                                @endif
                             @error('logo')
                         <span class="text-danger">
                             {{ $message }}
