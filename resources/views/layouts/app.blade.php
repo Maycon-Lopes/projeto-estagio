@@ -18,6 +18,7 @@
 
     <!-- SEU CSS (vem depois!) -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    
 
     <!-- CSS EXTRA POR PÁGINA -->
     @yield('css')

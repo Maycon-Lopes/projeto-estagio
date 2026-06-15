@@ -190,17 +190,20 @@ return [
     |
     */
 
-    'classes_body' => '',
-    'classes_brand' => '',
-    'classes_brand_text' => '',
-    'classes_content_wrapper' => '',
-    'classes_content_header' => '',
-    'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
-    'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-white navbar-light',
-    'classes_topnav_nav' => 'navbar-expand',
-    'classes_topnav_container' => 'container',
+ 'classes_body' => '',
+'classes_brand' => '',
+'classes_brand_text' => 'text-dark',
+
+'classes_content_wrapper' => 'bg-white',
+'classes_content_header' => 'bg-light',
+'classes_content' => '',
+
+'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+'classes_sidebar_nav' => '',
+
+'classes_topnav' => 'navbar-light',
+'classes_topnav_nav' => 'navbar-expand',
+'classes_topnav_container' => 'container',
 
     /*
     |--------------------------------------------------------------------------
@@ -327,6 +330,12 @@ return [
             'label' => 4,
             'label_color' => 'success',
         ],
+        [
+    'text' => 'Times',
+    'url' => 'times',
+    'icon' => 'fas fa-fw fa-futbol',
+],
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
@@ -338,60 +347,8 @@ return [
             'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        [
-            'text' => 'multilevel',
-            'icon' => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-            ],
-        ],
-        ['header' => 'labels'],
-        [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
-        ],
-        [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
-        ],
-        [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
-        ],
+
+    
     ],
 
     /*
@@ -427,6 +384,13 @@ return [
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Plugins-Configuration
     |
     */
+
+    'css' => [
+    'css/style.css',
+],
+
+'js' => [
+],
 
     'plugins' => [
         'Datatables' => [
