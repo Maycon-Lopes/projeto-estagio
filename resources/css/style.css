@@ -36,6 +36,7 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: 500;
+    transition: color 0.9s;
 }
 
 nav a:hover {
@@ -97,11 +98,12 @@ a {
     padding: 10px 10px;
     border-radius: 20px;
     cursor: pointer;
+    transition: background 0.6s, color 0.6s;
 }
 
 .btn-topo:hover {
     background: #8cff008f;
-    color: black;
+    color: #0b1d2a;
     transition: background 0.6s, color 0.6s;
 }
 
@@ -114,11 +116,11 @@ a {
     font-weight: bold;
     border-radius: 25px;
     cursor: pointer;
+    transition: box-shadow 0.6s;
 }
 .btn-principal:hover {
     transition: box-shadow 0.6s;
     box-shadow: 0 0 15px #8cff00;
-    
 }
 
 .btn-editar {
@@ -128,6 +130,7 @@ a {
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
+    transition: background 0.6s;
 }
 
 .btn-editar:hover {
@@ -145,6 +148,7 @@ a {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    transition: background 0.6s;
 }
 
 .btn-excluir:hover {

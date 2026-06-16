@@ -9,10 +9,16 @@ Route::get('/', [TeamController::class, 'index']);
 Route::get('/create', [TeamController::class, 'teams.create']);
 Route::get('/times', [TeamController::class, 'showTeams'])->name('times');
 Route::get('/contatos', [TeamController::class, 'showContacts'])->name('contatos');
+Route::get('/tabela', [TeamController::class, 'showTeams'])->name('table');
+
+Route::get('/tabela', function() {
+    return view('teams.table');
+});
 
 Route::get('/register', function () {
     return view('auth.register');
 });
+
 
 Route::get('/login', function () {
     return view('auth.login');

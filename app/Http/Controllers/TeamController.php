@@ -24,6 +24,12 @@ class TeamController extends Controller
         return view('teams.teams', compact('teams'));
     }
 
+    public function tableTeams()
+    {
+        $teams = Team::all();
+        return view('teams.table', compact('teams'));
+    }
+
     public function showContacts()
     {
         $teams = Team::all();
