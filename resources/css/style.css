@@ -243,3 +243,51 @@ a {
     border-radius: 10px;
     overflow-wrap: anywhere;
 }
+
+/* ===== INTEGRAÇÃO COM ADMINLTE ===== */
+
+/* FUNDO GERAL */
+.content-wrapper {
+    background-color: #2f2f2f !important;
+}
+
+/* HEADER */
+.content-header {
+    background-color: #3a3a3a !important;
+}
+
+/* NAVBAR (topo) */
+.main-header {
+    background-color: #1f1f1f !important;
+}
+
+/* TEXTO DO NAVBAR */
+.main-header .nav-link {
+    color: #ffffff !important;
+}
+
+/* SIDEBAR */
+.main-sidebar {
+    background-color: #1a1a1a !important;
+}
+
+/* TEXTO SIDEBAR */
+.main-sidebar .nav-link p {
+    color: #ffffff !important;
+}
+
+/* LINKS SIDEBAR */
+.nav-sidebar .nav-link {
+    color: #ffffff !important;
+}
+
+/* ITEM ATIVO */
+.nav-sidebar .nav-link.active {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+/* HOVER */
+.nav-sidebar .nav-link:hover {
+    background-color: #555 !important;
+}

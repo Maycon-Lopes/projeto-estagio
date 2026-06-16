@@ -1,0 +1,55 @@
+/* FUNDO GERAL */
+.content-wrapper {
+    background-color: #0b1d2a !important;
+}
+
+/* CARD (FORMULÁRIO) */
+.card {
+    background: #132c3a !important;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* HEADER DO CARD */
+.card-header {
+    background: #8cff00 !important;
+    color: black !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* INPUTS */
+.form-control {
+    background: #0b1d2a !important;
+    border: 1px solid #8cff00 !important;
+    color: white !important;
+}
+
+/* TEXTO DOS LABELS */
+label {
+    color: #ffffff !important;
+}
+
+/* BOTÃO */
+.btn-success {
+    background: #8cff00 !important;
+    border: none;
+    color: black !important;
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.main-sidebar {
+    background-color: #081520 !important;
+}
+
+/* TEXTO SIDEBAR */
+.nav-sidebar .nav-link {
+    color: #cfd8dc !important;
+}
+
+.nav-sidebar .nav-link:hover {
+    background: #8cff00 !important;
+    color: black !important;
+}
