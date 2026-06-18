@@ -171,12 +171,13 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-primary',
-    'classes_auth_header' => '',
-    'classes_auth_body' => '',
-    'classes_auth_footer' => '',
+    'classes_auth_card' => 'bg-dark border-success',
+    'classes_auth_header' => 'bg-dark text-success',
+    'classes_auth_body' => 'bg-dark text-white',
+    'classes_auth_footer' => 'bg-dark',
     'classes_auth_icon' => '',
     'classes_auth_btn' => 'btn-flat btn-primary',
+    'language' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------

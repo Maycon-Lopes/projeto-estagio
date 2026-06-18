@@ -1,26 +1,31 @@
 @extends('adminlte::page')
 
-@section('title', 'Cadastro')
+@section('title', 'Cadastro de Times')
+
+@section('css')
+    @vite('resources/css/style.css')
+@stop
 
 @section('content')
 
-@section('css')
-<link rel="stylesheet" href="{{ asset('css/admin-custom.css') }}">
-@stop
+<div class="row justify-content-center" style="margin-top: 20px;">
 
-<div class="row justify-content-center mt-5">
-    <div class="col-md-6">
+    <div class="col-md-8">
 
-        <div class="card card-success">
+        <div class="card shadow">
+
             <div class="card-header">
-                <h3 class="card-title"> 
-                    Cadastro de Times
+                <h3 class="card-title">
+                    Cadastre seu Time
                 </h3>
             </div>
 
             <div class="card-body">
 
-                <form method="POST" action="{{ route('teams.store') }}" enctype="multipart/form-data">
+                <form method="POST"
+                      action="{{ route('teams.store') }}"
+                      enctype="multipart/form-data">
+
                     @csrf
 
                     <div class="form-group">
@@ -72,15 +77,17 @@
                             @enderror
                     </div>
 
-                    <button class="btn btn-success">
-                        Cadastrar
+                    <button class="btn btn-success btn-lg">
+                        ⚽ Cadastrar Time
                     </button>
 
                 </form>
 
             </div>
+
         </div>
 
     </div>
+
 </div>
 @stop

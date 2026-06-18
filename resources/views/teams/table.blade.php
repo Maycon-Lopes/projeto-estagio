@@ -6,6 +6,10 @@
     <h1>Times Cadastrados</h1>
 @stop
 
+@section('css')
+    @vite('resources/css/style.css')
+@stop
+
 @section('content')
 
 <div class="card">

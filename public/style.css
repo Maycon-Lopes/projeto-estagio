@@ -365,147 +365,34 @@ a {
     border-top: 1px solid #8cff00 !important;
 }
 
-.card {
+.login-page,
+.register-page {
+    background: #0b1d2a !important;
+}
+
+.login-box .card,
+.register-box .card {
     background: #132b3d !important;
-    color: white !important;
     border-top: 3px solid #8cff00 !important;
 }
 
-.card-header {
-    background: #1e303d !important;
+.login-logo a,
+.register-logo a {
     color: #8cff00 !important;
 }
 
-.form-control {
-    background: #1e303d !important;
+.card-body {
     color: white !important;
-    border: 1px solid #8cff00 !important;
 }
 
-.form-control:focus {
-    border-color: #8cff00 !important;
-    box-shadow: 0 0 10px rgba(140,255,0,.4) !important;
-}
-
-.btn-success {
+.btn-primary {
     background: #8cff00 !important;
     border-color: #8cff00 !important;
     color: black !important;
-    font-weight: bold;
-}
-
-.perfil-body {
-    background: #132b3d !important;
-    color: white !important;
-}
-
-.perfil-body h3,
-.perfil-body p,
-.perfil-body label {
-    color: white !important;
-}
-
-.perfil-body .form-control {
-    background: #1e303d !important;
-    color: white !important;
-    border: 1px solid #8cff00 !important;
-}
-
-.perfil-body .form-control:focus {
-    background: #1e303d !important;
-    color: white !important;
-}
-
-.card-outline.card-success {
-    border-top: 3px solid #8cff00 !important;
-}
-
-.card-header {
-    background: #1e303d !important;
-    color: #8cff00 !important;
-}
-
-.card {
-    background: #132b3d !important;
-    color: white !important;
-}
-
-.card-header {
-    background: #1e303d !important;
-    color: #8cff00 !important;
-}
-
-.card-title {
-    color: #8cff00 !important;
 }
 
 .form-control {
     background: #1e303d !important;
     color: white !important;
-    border: 1px solid #8cff00 !important;
-}
-
-.form-control:focus {
-    background: #1e303d !important;
-    color: white !important;
-}
-
-label {
-    color: white !important;
-}
-
-.btn-success {
-    background: #8cff00 !important;
     border-color: #8cff00 !important;
-    color: black !important;
-    font-weight: bold;
-}
-
-/* CREATE TEAM */
-
-.card {
-    background: #132b3d !important;
-    border: 1px solid #8cff00 !important;
-    border-radius: 15px !important;
-}
-
-.card-header {
-    background: #1e303d !important;
-    border-bottom: 1px solid #8cff00 !important;
-}
-
-.card-title {
-    color: #8cff00 !important;
-    font-weight: bold;
-}
-
-label {
-    color: white !important;
-}
-
-.form-control {
-    background: #1e303d !important;
-    color: white !important;
-    border: 1px solid #8cff00 !important;
-}
-
-.form-control:focus {
-    background: #1e303d !important;
-    color: white !important;
-    box-shadow: 0 0 10px rgba(140,255,0,.4) !important;
-}
-
-.btn-success {
-    background: #8cff00 !important;
-    border: none !important;
-    color: #0b1d2a !important;
-    font-weight: bold !important;
-}
-
-.btn-success:hover {
-    box-shadow: 0 0 15px #8cff00;
-}
-
-.text-danger {
-    color: #ff5f5f !important;
 }

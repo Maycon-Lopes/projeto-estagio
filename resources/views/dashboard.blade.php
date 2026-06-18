@@ -2,6 +2,11 @@
 
 @section('tittle', 'TimeConectado')
 
+@section('css')
+    @vite('resources/css/style.css')
+@stop
+
+
 @section('content')
 
 <div class="card bg-dark">
