@@ -13,6 +13,7 @@
     <nav>
         <a href="{{ route('times') }}">Times</a>
         <a href="{{ route('contatos') }}">Contatos</a>
+        <a href="{{ route('table') }}">Tabela</a>
     </nav>
 
 
@@ -26,7 +27,7 @@
             participe de campeonatos e mostre a força do seu futebol.
         </p>
 
-        <a href="{{ route('times') }}" class="btn-principal">Faça Parte</a>
+        <a href="{{ route('register') }}" class="btn-principal">Faça Parte</a>
     </div>
 </section>
 

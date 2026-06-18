@@ -11,6 +11,7 @@
     <nav>
         <a href="/">início</a>
         <a href="{{ route('times')}}">Times</a>
+        <a href="{{ route('table') }}">Tabela</a>
         <a href="{{ route('teams.create') }}" class="btn-topo">Cadastre seu time</a>
     </nav>
 </header>

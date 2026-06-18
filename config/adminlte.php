@@ -198,7 +198,7 @@ return [
     'classes_content' => '',
     'classes_sidebar' => 'sidebar-dark-primary elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-black navbar-dark',
+    'classes_topnav' => 'navbar-dark navbar-success',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -321,29 +321,20 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'pages',
-            'url' => '/',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
+            'text' => 'Meu perfil',
+            'url' => 'user',
+            'icon' => 'fas fa-user'
         ],
         [
-    'text' => 'Times',
-    'url' => 'times',
-    'icon' => 'fas fa-fw fa-futbol',
-],
-
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+        'text' => 'Páginas',
+        'icon' => 'bi bi-file-post',
+        'submenu' => [
+            ['text' => 'início', 'url' => '/'],
+            ['text' => 'tabela', 'url' => 'tabela'],
+            ['text' => 'times', 'url' => 'times'],
+            ['text' => 'contatos', 'url' => 'contatos'],
         ],
-        [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+    ],
 
     
     ],

@@ -26,7 +26,7 @@ class TeamController extends Controller
 
     public function tableTeams()
     {
-        $teams = Team::all();
+        $teams = Team::paginate(5);
         return view('teams.table', compact('teams'));
     }
 
