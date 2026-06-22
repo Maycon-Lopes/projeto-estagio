@@ -12,37 +12,37 @@ class TeamSeeder extends Seeder {
         $teams = [[
             'name' => 'Botafogo',
             'city' => 'Rio de Janeiro',
-            'logo' => 'teams/botafogo-escudo.webp',
+            'logo' => 'teams/botafogo.webp',
             'contact' => 'botafogo@gmail.com',
         ],
         [
             'name' => 'Flamengo',
             'city' => 'Rio de Janeiro',
-            'logo' => 'teams/framengo.webp',
+            'logo' => 'teams/flamengo.webp',
             'contact' => 'flamengo@gmail.com',
         ],
         [
             'name' => 'Paris Saint Germain',
             'city' => 'Paris',
-            'logo' => 'teams/PSG.webp',
+            'logo' => 'teams/psgwebp',
             'contact' => 'psg@gmail.com',
         ],
         [
             'name' => 'Fortaleza',
             'city' => 'Fortaleza',
-            'logo' => 'teams/Fortaleza.webp',
+            'logo' => 'teams/fortaleza.webp',
             'contact' => 'fortaleza@gmail.com',
         ],
         [
             'name' => 'Remo',
             'city' => 'Remada',
-            'logo' => 'teams/Remo.webp',
+            'logo' => 'teams/remo.webp',
             'contact' => 'remo@gmail.com',
         ],  
         [
             'name' => 'Ceará',
             'city' => 'Fortal city',
-            'logo' => 'teams/Ceara.webp',
+            'logo' => 'teams/ceara.webp',
             'contact' => 'ceara@gmail.com',
         ]];
         foreach ($teams as $team) { 

@@ -31,6 +31,8 @@ Route::get('/user', [ProfileController::class, 'edit'])
 Route::put('/user', [ProfileController::class, 'update'])
     ->name('user');
 
+Route::get('logout', [ProfileController::class, 'logout'])->name('logout');
+
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('teams', TeamController::class);
